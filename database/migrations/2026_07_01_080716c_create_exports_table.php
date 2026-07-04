@@ -13,7 +13,7 @@ return new class extends Migration
             $table->foreignId('project_id')->constrained()->cascadeOnDelete();
             $table->foreignId('prd_id')->constrained()->cascadeOnDelete();
             $table->string('type'); // markdown, pdf, docx, html
-            $table->string('path');
+            $table->text('path');
             $table->timestamps();
         });
     }
